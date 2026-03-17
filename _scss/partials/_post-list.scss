@@ -1,0 +1,31 @@
+article.post-list-item {
+    background: var(--posts-list-background);
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    border:1px solid var(--event-border-color);
+    border-radius: 1rem;
+    figure {
+        flex: 1 1 6rem;
+        img {
+            width: 100%;
+            height:auto;
+        }
+    }
+    .post-list-item-content {
+        flex: 2.5;
+    }
+}
+@media screen and (max-width: 40em) {
+    article.post-list-item {
+        flex-direction: column;
+        figure {
+            flex: 1 1 auto;
+        }
+        .post-list-item-content {
+            flex: 1 1 auto;
+            padding: 0 2em;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        {% if page.description %}<meta name="description" content="{{ page.description | strip_html | escape }}"/>{% elsif site.description %}<meta name="description" content="{{ site.description | strip_html | escape }}"/>{% endif %}
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        {% if jekyll.environment == "production" %}
+        <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/maps.min.css" integrity="{{ site.data.integrity['style.min'] }}" crossorigin="anonymous">
+        {% else %}
+        <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/maps.css" integrity="{{ site.data.integrity['style'] }}" crossorigin="anonymous">
+        {% endif %}
+        <script src="{{ site.url }}{{ site.baseurl }}/assets/js/config.js"></script>
+        {% if site.google_author %}<link rel="author" href="{{ site.google_author }}"/>{% endif %}
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}/assets/icons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="{{ site.url }}{{ site.baseurl }}/assets/icons/favicon.svg" />
+        <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}/assets/icons/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}{{ site.baseurl }}/assets/icons/apple-touch-icon.png" />
+        <link rel="manifest" href="{{ site.url }}{{ site.baseurl }}/assets/icons/site.webmanifest" />
+        <!-- Facebook Optimization -->
+        <meta property="og:locale" content="{% if site.og_locale == nil %}en_EN{% else %}{{ site.og_locale }}{% endif %}" />
+        {% if site.og_type %}<meta property="og:type" content="website" />{% endif %}
+        <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+        {% if page.description %}<meta property="og:description" content="{{ page.description | strip_html | escape }}"/>{% elsif site.description %}<meta property="og:description" content="{{ site.description | strip_html | escape }}"/>{% endif %}
+        <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+        {% if site.title %}<meta property="og:site_name" content="{{ site.title }}" />{% endif %}
+
+        {% if site.alexa_verify_id %}<meta name="alexaVerifyID" content="{{ site.alexa_verify_id }}" />{% endif %}
+        {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification}}" />{% endif %}
+        {% if site.bing_webmastertools_id %}<meta name="msvalidate.01" content="{{ site.bing_webmastertools_id }}" />{% endif %}
+        {% if page.noindex == true %}<meta name="robots" content="noindex">{% endif %}
+        {% include header-extras.html %}
+    </head>

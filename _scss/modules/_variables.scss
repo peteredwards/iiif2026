@@ -1,0 +1,58 @@
+:where(body) {
+    --background-color: #fff;
+    --text-color: #222;
+    --link-colour: #15570c;
+    --hover-colour: #1c7e10;
+    --top-bar-bg-colour: #333;
+    --top-bar-border: #1a1a1a;
+    --top-bar-text-colour: #fff;
+    --footer-bg-colour: #333;
+    --footer-text-colour: #fff;
+    --event-border-color: #15570c;
+    --posts-list-background: rgba(58, 170, 47, 0.07);
+    --max-content-width: 62rem;
+    --nav-hover-bg-colour: rgba(0, 0, 0, 0.25);
+    --pagination-bg-color: #15570c;
+    --pagination-bg-color-hover: #333;
+    --pagination-bg-color-disabled: #555;
+    --pagination-color: #fff;
+    --pagination-color-hover: #fff;
+    --pagination-color-disabled: #ccc;
+    --blockquote-border-colour: rgba(58, 170, 47, 0.1);
+    --snippet-border-color: #1c7e10;
+    --stripe-bg: #e4e4e4;
+    --stripe-color: #000;
+    --stripe-bg-odd: #fff;
+    --stripe-color-odd: #111;
+    --th-bg: #808080;
+    --th-color: #fff;
+    --table-border: #1c7e10;
+    --border-radius: .35rem;
+
+}
+@media (prefers-color-scheme: dark) {
+    :where(body) {
+        --background-color: #222;
+        --text-color: #fff;
+        --link-colour: #a3ff91;
+        --stripe-bg: #222;
+        --stripe-color: #fff;
+        --stripe-bg-odd: #333;
+        --stripe-color-odd: #fff;
+        --th-bg: #111;
+        --th-color: #fff;
+        --table-border: #555;
+    }
+}
+:where(body.dark) {
+    --background-color: #222;
+    --text-color: #fff;
+    --link-colour: #a3ff91;
+    --stripe-bg: #222;
+    --stripe-color: #fff;
+    --stripe-bg-odd: #333;
+    --stripe-color-odd: #fff;
+    --th-bg: #111;
+    --th-color: #fff;
+    --table-border: #555;
+}

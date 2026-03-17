@@ -1,0 +1,109 @@
+---
+layout: compress
+---
+<!doctype html>
+<html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        {% if page.description %}<meta name="description" content="{{ page.description | strip_html | escape }}"/>{% elsif site.description %}<meta name="description" content="{{ site.description | strip_html | escape }}"/>{% endif %}
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@2.0.0-alpha.1/dist/leaflet.css" integrity="sha384-mduptj5Hiyp/jSH2p+p4A8UdSz0gnkrO1y37pdMuUTkAMEUuDsr12k7o4eQJXufp" crossorigin="anonymous">
+        {% if jekyll.environment == "production" %}
+        <link rel="stylesheet" href="https://friendsofcoldenclough.org.uk/assets/css/style.min.css">
+        {% else %}
+        <link rel="stylesheet" href="https://friendsofcoldenclough.org.uk/assets/css/style.css">
+        {% endif %}
+        {% if jekyll.environment == "production" %}
+        <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/maps.min.css">
+        {% else %}
+        <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/maps.css">
+        {% endif %}
+        {% if site.google_author %}<link rel="author" href="{{ site.google_author }}"/>{% endif %}
+        <link rel="manifest" href="https://friendsofcoldenclough.org.uk/manifest.webmanifest">
+        <link rel="icon" href="https://friendsofcoldenclough.org.uk/favicon.ico" sizes="32x32">
+        <link rel="icon" href="https://friendsofcoldenclough.org.uk/icon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="https://friendsofcoldenclough.org.uk/apple-touch-icon.png">
+        <!-- Facebook Optimization -->
+        <meta property="og:locale" content="{% if site.og_locale == nil %}en_EN{% else %}{{ site.og_locale }}{% endif %}" />
+        {% if site.og_type %}<meta property="og:type" content="website" />{% endif %}
+        <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+        {% if page.description %}<meta property="og:description" content="{{ page.description | strip_html | escape }}"/>{% elsif site.description %}<meta property="og:description" content="{{ site.description | strip_html | escape }}"/>{% endif %}
+        <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+        {% if site.title %}<meta property="og:site_name" content="{{ site.title }}" />{% endif %}
+
+        {% if site.alexa_verify_id %}<meta name="alexaVerifyID" content="{{ site.alexa_verify_id }}" />{% endif %}
+        {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification}}" />{% endif %}
+        {% if site.bing_webmastertools_id %}<meta name="msvalidate.01" content="{{ site.bing_webmastertools_id }}" />{% endif %}
+        {% if page.noindex == true %}<meta name="robots" content="noindex">{% endif %}
+		<script type="importmap">
+			{
+				"imports": {
+					"leaflet": "https://unpkg.com/leaflet@2.0.0-alpha.1/dist/leaflet.js"
+				}
+			}
+		</script>
+    </head>
+    <body id="top-of-page" class="{{ page.layout }}">
+        {% include content/navigation.html %}
+        <main>
+            <div class="container">
+
+				<section class="page-content">
+					<header>
+						<h1>{{ page.title }}</h1>
+					</header>
+
+				</section>
+
+				{{ content }}
+
+				<div id="map" class="focc-map"></div>
+
+            </div>
+        </main> 
+		<footer>
+			<div class="container">
+				<p>&copy; {{ site.time | date: "%Y" }} Friends of Colden Clough</p>
+				<nav>
+					<ul>
+						<li><a href="https://friendsofcoldenclough.org.uk/contact/">Contact Us</a></li>
+						<li><a href="https://friendsofcoldenclough.org.uk/privacy/">Privacy Policy</a></li>
+						<li><a href="https://friendsofcoldenclough.org.uk/about/">About Us</a></li>
+					</ul>
+				</nav>
+				<div class="social">
+					<a href="https://www.facebook.com/groups/3797294470486573/" target="_blank" title="Facebook page for the Friends of Colden Clough">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.333 95.333" xml:space="preserve">
+							<g>
+								<path d="M93.333,0H2C0.896,0,0,0.896,0,2v91.332c0,1.104,0.896,2,2,2h48.525V63.477H40.284c-0.885,0-1.602-0.717-1.602-1.602
+									V48.961c0-0.885,0.717-1.603,1.602-1.603h10.242v-8.913c0-11.744,7.395-19.332,18.839-19.332l10.188,0.016
+									c0.883,0.001,1.6,0.718,1.6,1.602v11.991c0,0.885-0.717,1.602-1.602,1.602l-6.863,0.003c-4.729,0-5.595,1.844-5.595,5.475v7.556
+									h11.979c0.425,0,0.832,0.169,1.133,0.47c0.3,0.301,0.469,0.708,0.469,1.133L80.67,61.876c0,0.885-0.717,1.603-1.602,1.603H67.092
+									v31.854h26.24c1.104,0,2-0.896,2-2V2C95.333,0.895,94.438,0,93.333,0z"/>
+							</g>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</footer>
+        <script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@4.1.7/dist/sortable.min.js" integrity="sha384-KJBzhWbOFhju6N4Bbl034ASSL8K5GirZoHBt0hZTiPcEKUUmzt5N2TIyg7bu5/AF" crossorigin="anonymous"></script>
+		<script type="module">
+			var focc = {
+				currentLoc: {
+					lat: 53.74691335748559,
+					lng: -2.0338482556515936
+				},
+				startZoom: 15
+			};
+			import L, {Map, TileLayer, Marker, Circle, Polygon, Popup, Control, DomUtil, DomEvent} from 'leaflet';
+
+			const map = new Map('map').setView([focc.currentLoc.lat, focc.currentLoc.lng], focc.startZoom);
+
+			const tiles = new TileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 19,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+		</script>        
+    </body>
+</html>

@@ -1,0 +1,67 @@
+.home {
+    article {
+        figure.featuredimage {
+            margin: 1rem 0 1rem 0;
+            width: 55%;
+            float: left;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        div.featuredcontent {
+            width: 40%;
+            float: right;
+        }
+        @media screen and (max-width: 40rem) {
+            figure.featuredimage {
+                float: none;
+                width: 100%;
+            }
+            div.featuredcontent {
+                width: 100%;
+                float: none;
+            }
+        }
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+}
+header {
+    figure.featuredimage {
+        margin: 0 0 1rem 0;
+        max-width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+figure.inlineimage {
+    margin: 0 0 1rem 0;
+    max-width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    figcaption {
+        font-style: italic;
+        text-align: right;
+    }
+}
+
+.snippet {
+    figure {
+        margin: 0 0 1rem 1rem;
+        max-width: 50%;
+        float:left;
+    }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

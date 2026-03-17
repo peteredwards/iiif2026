@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url('../font/OpenSans.woff') format('woff'),
+         url('../font/OpenSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+blockquote {
+    border-left: 1rem solid var(--blockquote-border-colour);
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    color: var(--blockquote-text-colour);
+    font-style: italic;
+    cite {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        font-style: normal;
+        text-align: right
+    }
+}
+.snippet {
+    border: 1px solid var(--snippet-border-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1em auto;
+}

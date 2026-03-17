@@ -1,0 +1,19 @@
+---
+layout: page
+---
+
+<h2>Upcoming Events</h2>
+{% assign curDate = site.time | date: '%s' %}
+{% for post in site.posts reversed%}
+    {% assign postStartDate = post.date | date: '%s' %}
+    {% if postStartDate >= curDate %}
+        {% include post-list.html post=post %}
+    {% endif %}
+{% endfor %}
+<h2>Past Events</h2>
+{% for post in site.posts %}
+    {% assign postStartDate = post.date | date: '%s' %}
+    {% if postStartDate <= curDate %}
+        {% include post-list.html post=post %}
+    {% endif %}
+{% endfor %}

@@ -1,0 +1,10 @@
+{% if include.image and include.alt and include.alt != "" %}
+<figure class="inlineimage">
+    <img src="{{ site.url }}{{ site.baseurl }}{{ site.imgpath }}{{ include.image }}" alt="{{ include.alt | escape }}">
+    {% if include.caption and include.caption != "" %}
+    <figcaption>
+        {{ include.caption }}
+    </figcaption>
+    {% endif %}
+</figure>
+{% endif %}

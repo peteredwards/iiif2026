@@ -1,0 +1,7 @@
+title: IIIF 2026
+description: Mapping tool for IIIF Conference, 2026 in Leiden, the Netherlands
+url: "https://peteredwards.github.io"
+baseurl: "/iiif2026"
+host: localhost
+port: 4000
+markdown: kramdown

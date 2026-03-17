@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+		<section class="page-content">
+			<header>
+				<h1>{{ page.title }}</h1>
+				{% if page.featuredimage %}
+				<figure class="featuredimage">
+					<img src="{{ site.url }}{{ site.imgpath }}{{ page.featuredimage }}" alt="{{ page.title | escape_once }}">
+				</figure>
+				{% endif %}
+			</header>
+
+			{{ content }}
+			
+		</section>

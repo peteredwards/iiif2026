@@ -1,0 +1,19 @@
+/**
+ * baseline styles
+ */
+body {
+	font-size: 100%;
+	background: var(--background-color);
+	color: var(--text-color);
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 150%;
+	position: relative;
+}
+a {
+    color: var(--link-colour);
+    &:hover, &:active {
+        color: var(--hover-colour);
+    }
+}

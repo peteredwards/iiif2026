@@ -1,0 +1,16 @@
+<article class="post-list-item">
+    {% if post.featuredimage %}
+    <figure>
+        <a href="{{ post.url }}">
+            <img src="{{ site.url}}{{ site.imgpath }}{{ post.featuredimage }}" alt="{{ post.title | escape }} featured image">
+        </a>
+    </figure>
+    {% endif %}
+    <div class="post-list-item-content">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+        {% if post.content contains '<!--more-->' %}
+        <p><a href="{{ post.url }}" class="read-more">Continue reading&hellip;</a></p>
+        {% endif %}
+    </div>
+</article>

@@ -1,0 +1,41 @@
+footer {
+	.container {
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+		align-items: center;
+	}
+	background: var(--footer-bg-colour);
+	color: var(--footer-text-colour);
+	nav ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		text-align: center;
+		gap: 1rem;
+        a {
+            display: inline-block;
+            padding: 0.5rem;
+            color: var(--footer-text-colour);
+            text-decoration:none;
+            &:hover, &.active {
+                color: var(--footer-text-colour);
+                background: var(--nav-hover-bg-colour);
+			    
+            }
+        }
+	}
+	div.social a {
+		text-decoration:none;
+		margin-left:1rem;
+		svg {
+			height:1.5rem;
+			width:auto;
+			fill: var(--footer-text-colour);
+		}
+	}
+}

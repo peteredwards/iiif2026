@@ -1,0 +1,155 @@
+{
+    "type": "FeatureCollection", 
+    "features": [
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4887014, 52.1630747, 0] }, 
+            "properties": {
+                "id": "scheltema",
+                "name": "Scheltema Leiden", 
+                "url": "",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4732128, 52.1647779, 0] }, 
+            "properties": {
+                "id": "naturalis",
+                "name": "Naturalis Biodiversity Center", 
+                "url": "",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4789215, 52.1596191, 0] }, 
+            "properties": {
+                "id": "culturecafe",
+                "name": "Culture Cafe Leidse Lente", 
+                "url": "",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.9032097, 52.3831832, 0] }, 
+            "properties": {
+                "id": "tolhuistuin",
+                "name": "Tolhuistuin", 
+                "url": "",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.3275166, 52.081702, 0] }, 
+            "properties": {
+                "id": "royallibrary",
+                "name": "Royal Library", 
+                "url": "",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.3266699, 52.0806739, 0] }, 
+            "properties": {
+                "id": "nationalarchives",
+                "name": "Nationaal Archief", 
+                "url": "",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4846089, 52.1596659, 0] }, 
+            "properties": {
+                "id": "sieboldhuis",
+                "name": "Japan Museum SieboldHuis", 
+                "url": "",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4858978, 52.1584668, 0] }, 
+            "properties": {
+                "id": "antiquities",
+                "name": "National Museum of Antiquities", 
+                "url": "",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4878087, 52.1576184, 0] }, 
+            "properties": {
+                "id": "pieterskerk",
+                "name": "Pieterskerk, Leiden", 
+                "url": "",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4838994, 52.154917, 0] }, 
+            "properties": {
+                "id": "sterrewacht",
+                "name": "Oude Sterrewacht (Old Observatory Leiden)", 
+                "url": "",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.484888, 52.1571223, 0] }, 
+            "properties": {
+                "id": "hortusbotanicus",
+                "name": "Hortus Botanicus Leiden", 
+                "url": "https://hortusleiden.nl/?utm_source=Google&utm_medium=Googlebedrijfsprofiel+&utm_campaign=hb",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4535999, 52.1705, 0] }, 
+            "properties": {
+                "id": "corpus",
+                "name": "Corpus", 
+                "url": "",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.3143148, 52.0804322, 0] }, 
+            "properties": {
+                "id": "mauritshuis",
+                "name": "Mauritshuis", 
+                "url": "https://www.mauritshuis.nl/",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.3034284, 52.0846659, 0] }, 
+            "properties": {
+                "id": "panorama",
+                "name": "Museum Panorama Mesdag", 
+                "url": "https://panorama-mesdag.nl/",
+                "type": "venue"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.314293971164594, 52.083436638447715, 0] }, 
+            "properties": {
+                "id": "escher",
+                "name": "Escher in the Palace", 
+                "url": "https://escherinhetpaleis.nl/",
+                "type": "venue"
+            }
+        }
+    ]
+}

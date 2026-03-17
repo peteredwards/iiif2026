@@ -1,0 +1,19 @@
+{
+  "name": "iiif2026",
+  "version": "0.0.1",
+  "description": "Information for IIIF 2026 in Lieden, The Netherlands",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node _scripts/minify.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peteredwards/iiif2026.git"
+  },
+  "author": "Peter Edwards <p.l.edwards@leeds.ac.uk>",
+  "license": "UNLICENSE",
+  "devDependencies": {
+    "sass": "^1.97.3",
+    "uglify-js": "^3.19.3"
+  }
+}
