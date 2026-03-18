@@ -3,22 +3,291 @@
     "features": [
         {
             "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.4887014, 52.1630747, 0] }, 
             "properties": {
                 "id": "scheltema",
-                "name": "Scheltema Leiden", 
-                "url": "",
+                "name": "Scheltema Leiden",
+                "description": "The main conference venue",
+                "url": "https://www.scheltemaleiden.nl/en/",
                 "type": "venue"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            4.488671,
+                            52.163345
+                        ],
+                        [
+                            4.48906,
+                            52.163337
+                        ],
+                        [
+                            4.489058,
+                            52.163271
+                        ],
+                        [
+                            4.48883,
+                            52.163275
+                        ],
+                        [
+                            4.488822,
+                            52.1631
+                        ],
+                        [
+                            4.488846,
+                            52.1631
+                        ],
+                        [
+                            4.488854,
+                            52.163194
+                        ],
+                        [
+                            4.488945,
+                            52.163192
+                        ],
+                        [
+                            4.488929,
+                            52.162947
+                        ],
+                        [
+                            4.488808,
+                            52.162949
+                        ],
+                        [
+                            4.4888,
+                            52.162799
+                        ],
+                        [
+                            4.488637,
+                            52.162806
+                        ],
+                        [
+                            4.488671,
+                            52.163345
+                        ]
+                    ]
+                ]
             }
         }, 
         {
             "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.4732128, 52.1647779, 0] }, 
             "properties": {
                 "id": "naturalis",
-                "name": "Naturalis Biodiversity Center", 
-                "url": "",
+                "name": "Naturalis Biodiversity Center",
+                "description": "Venue for the welcome drinks reception on <strong>June 1st</strong>. Naturalis is a welcoming and easily accessible museum for young and old. There are seven theme galleries, two attractions, three workshop areas and four information points.",
+                "image": "naturalis.jpg",
+                "url": "https://www.naturalis.nl/en",
                 "type": "venue"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            4.473372,
+                            52.16542
+                        ],
+                        [
+                            4.472192,
+                            52.165275
+                        ],
+                        [
+                            4.472321,
+                            52.164854
+                        ],
+                        [
+                            4.472412,
+                            52.164861
+                        ],
+                        [
+                            4.472428,
+                            52.164765
+                        ],
+                        [
+                            4.472267,
+                            52.164752
+                        ],
+                        [
+                            4.47231,
+                            52.164357
+                        ],
+                        [
+                            4.472889,
+                            52.16438
+                        ],
+                        [
+                            4.472889,
+                            52.164351
+                        ],
+                        [
+                            4.473501,
+                            52.164305
+                        ],
+                        [
+                            4.473522,
+                            52.164443
+                        ],
+                        [
+                            4.473538,
+                            52.164581
+                        ],
+                        [
+                            4.473522,
+                            52.164739
+                        ],
+                        [
+                            4.473426,
+                            52.165002
+                        ],
+                        [
+                            4.473372,
+                            52.16542
+                        ]
+                    ]
+                ]
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "properties": {
+                "id": "tolhuistuin",
+                "name": "Tolhuistuin", 
+                "description": "Venue for the Showcase day on <strong>June 1st</strong>. Tolhuistuin is 18,000 square meters of space for art and culture.",
+                "image": "tolhuistuin.jpg",
+                "url": "https://tolhuistuin.nl/",
+                "type": "venue"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            4.902678,
+                            52.383113
+                        ],
+                        [
+                            4.902858,
+                            52.383191
+                        ],
+                        [
+                            4.902912,
+                            52.383142
+                        ],
+                        [
+                            4.902984,
+                            52.383178
+                        ],
+                        [
+                            4.902936,
+                            52.383229
+                        ],
+                        [
+                            4.903014,
+                            52.383262
+                        ],
+                        [
+                            4.902955,
+                            52.383317
+                        ],
+                        [
+                            4.903226,
+                            52.383435
+                        ],
+                        [
+                            4.903287,
+                            52.383388
+                        ],
+                        [
+                            4.90337,
+                            52.383425
+                        ],
+                        [
+                            4.903429,
+                            52.383376
+                        ],
+                        [
+                            4.90351,
+                            52.383416
+                        ],
+                        [
+                            4.903582,
+                            52.38336
+                        ],
+                        [
+                            4.90366,
+                            52.383398
+                        ],
+                        [
+                            4.903797,
+                            52.383283
+                        ],
+                        [
+                            4.903716,
+                            52.38325
+                        ],
+                        [
+                            4.903778,
+                            52.383203
+                        ],
+                        [
+                            4.90369,
+                            52.38316
+                        ],
+                        [
+                            4.903762,
+                            52.3831
+                        ],
+                        [
+                            4.903494,
+                            52.382974
+                        ],
+                        [
+                            4.903424,
+                            52.383028
+                        ],
+                        [
+                            4.903258,
+                            52.382954
+                        ],
+                        [
+                            4.903325,
+                            52.382895
+                        ],
+                        [
+                            4.903234,
+                            52.382854
+                        ],
+                        [
+                            4.903132,
+                            52.382939
+                        ],
+                        [
+                            4.903041,
+                            52.382903
+                        ],
+                        [
+                            4.902923,
+                            52.383005
+                        ],
+                        [
+                            4.903014,
+                            52.383046
+                        ],
+                        [
+                            4.902976,
+                            52.383073
+                        ],
+                        [
+                            4.902802,
+                            52.382998
+                        ],
+                        [
+                            4.902678,
+                            52.383113
+                        ]
+                    ]
+                ]
             }
         }, 
         {
@@ -27,18 +296,10 @@
             "properties": {
                 "id": "culturecafe",
                 "name": "Culture Cafe Leidse Lente", 
-                "url": "",
-                "type": "venue"
-            }
-        }, 
-        {
-            "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.9032097, 52.3831832, 0] }, 
-            "properties": {
-                "id": "tolhuistuin",
-                "name": "Tolhuistuin", 
-                "url": "",
-                "type": "venue"
+                "description": "Comedy every first Tuesday of the month",
+                "image": "culturecafe.jpg",
+                "url": "https://galeriecafeleidselente.nl/",
+                "type": "cafe"
             }
         }, 
         {
@@ -47,8 +308,9 @@
             "properties": {
                 "id": "royallibrary",
                 "name": "Royal Library", 
-                "url": "",
-                "type": "venue"
+                "description": "Leiden University was founded with the spoils from a confiscated Catholic monastery nearby",
+                "url": "https://www.library.universiteitleiden.nl/",
+                "type": "library"
             }
         }, 
         {
@@ -57,8 +319,10 @@
             "properties": {
                 "id": "nationalarchives",
                 "name": "Nationaal Archief", 
-                "url": "",
-                "type": "venue"
+                "description": "The National Archives is the largest archival institution in the Netherlands",
+                "image": "nationalarchives.jpg",
+                "url": "https://www.nationaalarchief.nl/",
+                "type": "museum"
             }
         }, 
         {
@@ -67,8 +331,10 @@
             "properties": {
                 "id": "sieboldhuis",
                 "name": "Japan Museum SieboldHuis", 
-                "url": "",
-                "type": "venue"
+                "description": "Franz Philipp von Siebold (1796-1866) lived in this house and displayed his collection of Japanese objects and artefacts to a captivated public. Today, after more than 150 years, his former residence is now the first official Japan centre in the Netherlands.",
+                "image": "sieboldhuis.jpg",
+                "url": "https://www.sieboldhuis.org/en/",
+                "type": "museum"
             }
         }, 
         {
@@ -77,8 +343,10 @@
             "properties": {
                 "id": "antiquities",
                 "name": "National Museum of Antiquities", 
-                "url": "",
-                "type": "venue"
+                "description": "Explore the age-old civilisations of Egypt, the Classical World, the ancient Near East, and the Netherlands in prehistoric, Roman, and medieval times",
+                "image": "antiquities.jpg",
+                "url": "https://www.rmo.nl/en/",
+                "type": "museum"
             }
         }, 
         {
@@ -87,8 +355,10 @@
             "properties": {
                 "id": "pieterskerk",
                 "name": "Pieterskerk, Leiden", 
-                "url": "",
-                "type": "venue"
+                "description": "Home to the Van Hagerbeer organ - the only large Dutch city organ from the 17th century still in existence that has a meantone temperament.",
+                "image": "pieterskerk.jpg",
+                "url": "https://pieterskerk.com/",
+                "type": "church"
             }
         }, 
         {
@@ -97,8 +367,10 @@
             "properties": {
                 "id": "sterrewacht",
                 "name": "Oude Sterrewacht (Old Observatory Leiden)", 
-                "url": "",
-                "type": "venue"
+                "description": "The Old Observatory stands on the grounds of the Hortus. This observatory is the oldest surviving university observatory in the world.",
+                "image": "sterrewacht",
+                "url": "https://hortusleiden.nl/zien-en-doen/ontdek-de-oude-sterrewacht",
+                "type": "museum"
             }
         }, 
         {
@@ -107,8 +379,10 @@
             "properties": {
                 "id": "hortusbotanicus",
                 "name": "Hortus Botanicus Leiden", 
-                "url": "https://hortusleiden.nl/?utm_source=Google&utm_medium=Googlebedrijfsprofiel+&utm_campaign=hb",
-                "type": "venue"
+                "description": "The Hortus is an oasis of tranquility in the heart of Leiden",
+                "image": "hortusbotanicus.jpg",
+                "url": "https://hortusleiden.nl/",
+                "type": "garden"
             }
         }, 
         {
@@ -116,8 +390,10 @@
             "geometry": { "type": "Point", "coordinates": [4.4535999, 52.1705, 0] }, 
             "properties": {
                 "id": "corpus",
-                "name": "Corpus", 
-                "url": "",
+                "name": "Corpus Museum", 
+                "description": "",
+                "image": "corpus.jpg",
+                "url": "https://corpusexperience.nl/",
                 "type": "venue"
             }
         }, 
@@ -127,6 +403,7 @@
             "properties": {
                 "id": "mauritshuis",
                 "name": "Mauritshuis", 
+                "description": "",
                 "url": "https://www.mauritshuis.nl/",
                 "type": "venue"
             }
@@ -137,6 +414,7 @@
             "properties": {
                 "id": "panorama",
                 "name": "Museum Panorama Mesdag", 
+                "description": "",
                 "url": "https://panorama-mesdag.nl/",
                 "type": "venue"
             }
