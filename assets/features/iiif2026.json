@@ -327,6 +327,18 @@
         }, 
         {
             "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.488891, 52.161468, 0] }, 
+            "properties": {
+                "id": "boerhaave",
+                "name": "Rijksmuseum Boerhaave", 
+                "description": "The Caecilia Hospital was once a hospital and a pioneer in medical education; today, it serves as the historic home of Rijksmuseum Boerhaave.",
+                "image": "boerhaave.jpg",
+                "url": "https://www.rijksmuseumboerhaave.nl/",
+                "type": "museum"
+            }
+        }, 
+        {
+            "type": "Feature", 
             "geometry": { "type": "Point", "coordinates": [4.4846089, 52.1596659, 0] }, 
             "properties": {
                 "id": "sieboldhuis",
@@ -347,6 +359,18 @@
                 "image": "antiquities.jpg",
                 "url": "https://www.rmo.nl/en/",
                 "type": "museum"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.494175, 52.157963, 0] }, 
+            "properties": {
+                "id": "hooglandsekerk",
+                "name": "Hooglandsekerk, Leiden", 
+                "description": "At the confluence of the Old and New Rhine stands the Hooglandse Kerk, an imposing late Gothic cruciform basilica in the heart of Leiden and a gathering place for various occasions for centuries.",
+                "image": "hooglandsekerk.jpg",
+                "url": "https://hooglandsekerk.com/",
+                "type": "church"
             }
         }, 
         {
@@ -375,6 +399,18 @@
         }, 
         {
             "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.487625, 52.163041, 0] }, 
+            "properties": {
+                "id": "lakenhal",
+                "name": "Museum de Lakenhal", 
+                "description": "Museum De Lakenhal is the visual arts, history and crafts museum of the city of Leiden.",
+                "image": "lakenhal",
+                "url": "https://www.lakenhal.nl/",
+                "type": "museum"
+            }
+        }, 
+        {
+            "type": "Feature", 
             "geometry": { "type": "Point", "coordinates": [4.484888, 52.1571223, 0] }, 
             "properties": {
                 "id": "hortusbotanicus",
@@ -391,10 +427,10 @@
             "properties": {
                 "id": "corpus",
                 "name": "Corpus Museum", 
-                "description": "",
+                "description": "At CORPUS, everything revolves around the wonders of the human body and how to take good care of it: appealing, connecting and relevant to every person.",
                 "image": "corpus.jpg",
                 "url": "https://corpusexperience.nl/",
-                "type": "venue"
+                "type": "museum"
             }
         }, 
         {
@@ -403,9 +439,10 @@
             "properties": {
                 "id": "mauritshuis",
                 "name": "Mauritshuis", 
-                "description": "",
+                "description": "The Mauritshuis stands in the heart of The Hague. A small museum of world class with an extraordinary collection of world-famous 17th-century Dutch and Flemish painting.",
+                "image": "mauritshuis.jpg",
                 "url": "https://www.mauritshuis.nl/",
-                "type": "venue"
+                "type": "museum"
             }
         }, 
         {
@@ -414,9 +451,10 @@
             "properties": {
                 "id": "panorama",
                 "name": "Museum Panorama Mesdag", 
-                "description": "",
+                "description": "Visit the world-famous Panorama of Scheveningen, painted by Hendrik Willem Mesdag in 1881",
+                "image": "panorama.jpg",
                 "url": "https://panorama-mesdag.nl/",
-                "type": "venue"
+                "type": "museum"
             }
         },
         {
@@ -424,9 +462,35 @@
             "geometry": { "type": "Point", "coordinates": [4.314293971164594, 52.083436638447715, 0] }, 
             "properties": {
                 "id": "escher",
-                "name": "Escher in the Palace", 
+                "name": "Escher in the Palace",
+                "description": "With over 120 prints, Escher in Het Paleis always displays the most famous works and a selection of ever-changing graphic art and tessellations from the oeuvre of Maurits C. Escher (1898-1972)",
+                "image": "escher.jpg",
                 "url": "https://escherinhetpaleis.nl/",
-                "type": "venue"
+                "type": "museum"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.48574, 52.16296 ] },
+            "properties": {
+                "id": "lothotel",
+                "name": "LOT hotel",
+                "description": "Lot is located in the middle of the city with a beautiful view of the harbor.",
+                "image": "lothotel.jpg",
+                "url": "https://www.lothotel.nl/en",
+                "type": "hotel"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.492086, 52.156073 ] },
+            "properties": {
+                "id": "steenhofsuites",
+                "name": "Sttenhof Suites Boutique Hotel",
+                "description": "A luxurious boutique hotel in the vibrant city center of Leiden.",
+                "image": "steenhofsuites.jpg",
+                "url": "https://steenhofsuites.com/",
+                "type": "hotel"
             }
         }
     ]
