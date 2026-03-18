@@ -658,6 +658,14 @@ article.post-list-item .post-list-item-content {
     padding: 0 2em;
   }
 }
+.leaflet-popup-content img.popup-image {
+  width: 100%;
+  height: aut0;
+}
+.leaflet-popup-content p {
+  margin: 0.65em 0;
+}
+
 .home article figure.featuredimage {
   margin: 1rem 0 1rem 0;
   width: 55%;

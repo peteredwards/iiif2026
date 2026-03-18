@@ -7,6 +7,7 @@
                 "id": "scheltema",
                 "name": "Scheltema Leiden",
                 "description": "The main conference venue",
+                "image": "scheltema.jpg",
                 "url": "https://www.scheltemaleiden.nl/en/",
                 "type": "venue"
             },
@@ -392,7 +393,7 @@
                 "id": "sterrewacht",
                 "name": "Oude Sterrewacht (Old Observatory Leiden)", 
                 "description": "The Old Observatory stands on the grounds of the Hortus. This observatory is the oldest surviving university observatory in the world.",
-                "image": "sterrewacht",
+                "image": "sterrewacht.jpg",
                 "url": "https://hortusleiden.nl/zien-en-doen/ontdek-de-oude-sterrewacht",
                 "type": "museum"
             }
@@ -404,7 +405,7 @@
                 "id": "lakenhal",
                 "name": "Museum de Lakenhal", 
                 "description": "Museum De Lakenhal is the visual arts, history and crafts museum of the city of Leiden.",
-                "image": "lakenhal",
+                "image": "lakenhal.jpg",
                 "url": "https://www.lakenhal.nl/",
                 "type": "museum"
             }
@@ -418,7 +419,7 @@
                 "description": "The Hortus is an oasis of tranquility in the heart of Leiden",
                 "image": "hortusbotanicus.jpg",
                 "url": "https://hortusleiden.nl/",
-                "type": "garden"
+                "type": "park"
             }
         }, 
         {
@@ -478,6 +479,18 @@
                 "description": "Lot is located in the middle of the city with a beautiful view of the harbor.",
                 "image": "lothotel.jpg",
                 "url": "https://www.lothotel.nl/en",
+                "type": "hotel"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.491421, 52.159114 ] },
+            "properties": {
+                "id": "ctybooks",
+                "name": "CTY Books hotel",
+                "description": "Overlooking the city's oldest bridge and 11th century castle, lies Leiden's most upscale and up-to-date hotel, in a recently restored bookstore.",
+                "image": "ctybooks.jpg",
+                "url": "https://www.ctybooks.nl/",
                 "type": "hotel"
             }
         },

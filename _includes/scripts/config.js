@@ -5,6 +5,7 @@ var iiif = {
     },
     startZoom: 17,
     featuresURL: '{{ site.url }}{{ site.baseurl }}/assets/features/',
+    imagesURL: '{{ site.url }}{{ site.baseurl }}/assets/images/',
     features: [
         {
             id: 'iiif2026',

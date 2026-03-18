@@ -20,32 +20,14 @@ function loadFeatures() {
                      * in arrays so we can build the selecters
                      */
                     onEachFeature: function( feature, layer ) {
-                        layer.id = feature.properties.type + feature.id;
-                        /**
-                         * Add icons to the map
-                         * TODO: This will currently add an icon, but the bounds are not set correctly.
-                         * Ideally the GeoJSON would contain a point feature for each icon, but for now
-                         * we will just use the polygon bounds.
-                         */
-                        // if ( feature.properties.type === 'icon' ) {
-                        //     floor.iconlayer.addLayer( L.svgOverlay(getSVGIcon(feature.properties.icon), layer._latlngs) );
-                        //     return;    
-                        // }
-                        /**
-                         * Add icons to features on the map. These are SVG overlays which are positioned
-                         * in the centre of each GeoJSON Polygon. At the moment, this accesses the _latlngs
-                         * property of the layer (which I presume is intended to be private) so it would
-                         * be good to use another means to loop through GeoJSON features which are comprised
-                         * of multiple polygons.
-                         */
-                        let featureIcon = feature.properties.hasOwnProperty('icon') ? feature.properties.icon : false;
+                        layer.id = feature.properties.id;
                         /**
                          * Add tooltips / popups
                          */
-                        if ( feature.properties.type === 'area' ) {
-                            layer.bindTooltip( buildFeaturePopup(feature), { className: 'area-tooltip' } );
+                        if ( feature.properties.type === 'venue' ) {
+                            layer.bindPopup( buildFeaturePopup(feature), { autoClose: false, minWidth: 300, className: feature.properties.type + '-popup' } ).openPopup();
                         } else {
-                            layer.bindPopup( buildFeaturePopup(feature), { className: 'feature-tooltip' } );
+                            layer.bindPopup( buildFeaturePopup(feature), { minWidth: 300, className: feature.properties.type + '-popup' } );
                         }
                         /**
                          * Add interaction highlighting (only when entering the feature - the
@@ -76,5 +58,20 @@ function loadFeatures() {
 }
 
 function buildFeaturePopup( feature ) {
-    return "hello!";
+    let anchor_open = anchor_close = '';
+    if ( feature.properties.url && feature.properties.url !== '' ) {
+        anchor_open = '<a href="' + feature.properties.url + '" target="_external" title="Visit the ' + feature.properties.name + ' website">';
+        anchor_close = '</a>';
+    }
+    let popupText = '<h3>' + anchor_open + feature.properties.name + anchor_close + '</h3>';
+    if ( feature.properties.image && feature.properties.image !== '' ) {
+        popupText += anchor_open + '<img class="popup-image" src="' + iiif.imagesURL + feature.properties.image + '" alt="' + feature.properties.name + '">' + anchor_close;
+    }
+    if ( feature.properties.description && feature.properties.description !== '' ) {
+        popupText += '<p>' + feature.properties.description + '</p>';
+    }
+    if ( anchor_close !== '' ) {
+        popupText += '<p>' + anchor_open + 'Visit the ' + feature.properties.name + ' website' + anchor_close + '</p>';
+    }
+    return popupText;
 }
