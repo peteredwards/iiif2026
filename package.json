@@ -15,5 +15,9 @@
   "devDependencies": {
     "sass": "^1.97.3",
     "uglify-js": "^3.19.3"
+  },
+  "dependencies": {
+    "leaflet": "^2.0.0-alpha.1",
+    "svgo": "^4.0.1"
   }
 }

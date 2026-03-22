@@ -2,9 +2,10 @@
 @use 'modules/normalise';
 @use 'modules/baseline';
 @use 'modules/layout';
-@use 'modules/leaflet.awesome-markers';
+@use 'modules/featureselecter';
 
 @use 'partials/typography';
 @use 'partials/navigation';
 @use 'partials/footer';
+@use 'partials/icons';
 @use 'partials/popups';

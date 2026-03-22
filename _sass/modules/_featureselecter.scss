@@ -1,0 +1,37 @@
+.leaflet-control-featureselecter {
+    background: #ffffff;
+    padding: 0.5rem;
+    width: 12rem;
+
+    .featuregroup-container {
+        margin: 0;
+        &>details {
+            margin-left: 0.5rem;
+        }
+        .featuregroup-label {
+            font-weight: bold;
+            cursor: pointer;
+            &:hover {
+                background: #efefef;
+            }
+        }
+        .featuregroup-list {
+            margin: 0;
+            padding: 0.2rem 0 0.2rem 0.5rem;
+            display:flex;
+            flex-direction:column;
+            gap: 0.2rem;
+            button {
+                cursor: pointer;
+                display: block;
+                border: none;
+                padding: 0.2rem;
+                text-align: left;
+                color: var(--link-colour);
+                &:hover {
+                    color: var(--hover-colour);
+                }
+            }
+        }
+    }
+}
