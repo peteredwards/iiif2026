@@ -46,8 +46,9 @@ export class FeatureSelecter extends Control {
 
 	_createSummary(fg, f, container) {
         let d = DomUtil.create('details', 'featuregroup-container', container);
+		d.setAttribute('name', 'iiif-location-group'); 
 		let s = DomUtil.create('summary', 'featuregroup-label', d);
-		s.innerText = f.labelpl;
+		s.innerText = f.label;
         let dl = DomUtil.create('div', 'featuregroup-list', d);
         dl.id = fg + '-list';
 		return d;

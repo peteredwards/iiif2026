@@ -2,36 +2,12 @@
     "type": "FeatureCollection", 
     "features": [
         {
-            "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.488757, 52.163046 ] }, 
-            "properties": {
-                "id": "scheltema",
-                "name": "Scheltema Leiden",
-                "description": "The main conference venue",
-                "image": "scheltema.jpg",
-                "url": "https://www.scheltemaleiden.nl/en/",
-                "type": "venue"
-            }
-        }, 
-        {
-            "type": "Feature",
-            "geometry": { "type": "Point", "coordinates": [4.475394, 52.165751 ] }, 
-            "properties": {
-                "id": "naturalis",
-                "name": "Naturalis Biodiversity Center",
-                "description": "Venue for the welcome drinks reception on <strong>June 1st</strong>. Naturalis is a welcoming and easily accessible museum for young and old. There are seven theme galleries, two attractions, three workshop areas and four information points.",
-                "image": "naturalis.jpg",
-                "url": "https://www.naturalis.nl/en",
-                "type": "venue"
-            }
-        }, 
-        {
             "type": "Feature",
             "geometry": { "type": "Point", "coordinates": [ 4.903266, 52.383164 ] },
             "properties": {
                 "id": "tolhuistuin",
-                "name": "Tolhuistuin", 
-                "description": "Venue for the Showcase day on <strong>June 1st</strong>. Tolhuistuin is 18,000 square meters of space for art and culture.",
+                "name": "Amsterdam - Tolhuistuin", 
+                "description": "Venue for the <a href=\"https://www.conftool.org/iiif2026/index.php?page=browseSessions&form_date=2026-06-01&presentations=show\" target=\"programme\">Showcase day on <strong>June 1st</strong></a>. Tolhuistuin is 18,000 square meters of space for art and culture.",
                 "image": "tolhuistuin.jpg",
                 "url": "https://tolhuistuin.nl/",
                 "type": "venue"
@@ -39,42 +15,67 @@
         }, 
         {
             "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.4789215, 52.1596191, 0] }, 
+            "geometry": { "type": "Point", "coordinates": [4.4789215, 52.1596191] }, 
             "properties": {
                 "id": "culturecafe",
-                "name": "Culture Cafe Leidse Lente", 
-                "description": "Comedy every first Tuesday of the month",
+                "name": "Leiden - Culture Cafe Leidse Lente", 
+                "description": "Venue for the <a href=\"https://www.conftool.org/iiif2026/index.php?page=browseSessions&form_date=2026-06-01&presentations=show\" target=\"programme\">welcome drinks reception on <strong>June 1st</strong></a>.",
                 "image": "culturecafe.jpg",
                 "url": "https://galeriecafeleidselente.nl/",
-                "type": "cafe"
+                "type": "venue"
             }
         }, 
         {
             "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.3275166, 52.081702, 0] }, 
+            "geometry": { "type": "Point", "coordinates": [4.488757, 52.163046 ] }, 
             "properties": {
-                "id": "royallibrary",
-                "name": "Royal Library", 
-                "description": "Leiden University was founded with the spoils from a confiscated Catholic monastery nearby",
-                "url": "https://www.library.universiteitleiden.nl/",
-                "type": "library"
+                "id": "scheltema",
+                "name": "Leiden - Scheltema",
+                "description": "The main conference venue - see the <a href=\"https://www.conftool.org/iiif2026/index.php?page=browseSessions&presentations=show&form_date=2026-06-02\" target=\"programme\">programme for <strong>June 2nd</strong></a> and the <a href=\"https://www.conftool.org/iiif2026/index.php?page=browseSessions&presentations=show&form_date=2026-06-03\" target=\"programme\">programme for <strong>June 3rd</strong></a>.",
+                "image": "scheltema.jpg",
+                "url": "https://www.scheltemaleiden.nl/en/",
+                "type": "venue"
             }
         }, 
         {
             "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.3266699, 52.0806739, 0] }, 
+            "geometry": { "type": "Point", "coordinates": [4.3275166, 52.081702] }, 
+            "properties": {
+                "id": "kb",
+                "name": "The Hague - KB nationale bibliotheek",
+                "description": "Venue for some of the <a href=\"https://www.conftool.org/iiif2026/index.php?page=browseSessions&presentations=show&form_date=2026-06-04\" target=\"programme\">Workshops on <strong>June 4th</strong></a>.",
+                "image": "kb.jpg",
+                "url": "https://www.kb.nl/",
+                "type": "venue"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.3266699, 52.0806739] }, 
             "properties": {
                 "id": "nationalarchives",
-                "name": "Nationaal Archief", 
-                "description": "The National Archives is the largest archival institution in the Netherlands",
+                "name": "The Hague - National Archives", 
+                "description": "The Netherlands National Archives, venue for some of the <a href=\"https://www.conftool.org/iiif2026/index.php?page=browseSessions&presentations=show&form_date=2026-06-04\" target=\"programme\">Workshops on <strong>June 4th</strong></a>.",
                 "image": "nationalarchives.jpg",
                 "url": "https://www.nationaalarchief.nl/",
-                "type": "museum"
+                "type": "venue"
             }
         }, 
         {
             "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.488891, 52.161468, 0] }, 
+            "geometry": { "type": "Point", "coordinates": [4.3261618, 52.0810416] }, 
+            "properties": {
+                "id": "cbg",
+                "name": "The Hague - CBG|Centre for Family History", 
+                "description": "The CBG is the center for family history of the Netherlands, venue for some of the <a href=\"https://www.conftool.org/iiif2026/index.php?page=browseSessions&presentations=show&form_date=2026-06-04\" target=\"programme\">Workshops on <strong>June 4th</strong></a>.",
+                "image": "cbg.jpg",
+                "url": "https://cbg.nl/",
+                "type": "venue"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.488891, 52.161468] }, 
             "properties": {
                 "id": "boerhaave",
                 "name": "Rijksmuseum Boerhaave", 
@@ -86,91 +87,7 @@
         }, 
         {
             "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.4846089, 52.1596659, 0] }, 
-            "properties": {
-                "id": "sieboldhuis",
-                "name": "Japan Museum SieboldHuis", 
-                "description": "Franz Philipp von Siebold (1796-1866) lived in this house and displayed his collection of Japanese objects and artefacts to a captivated public. Today, after more than 150 years, his former residence is now the first official Japan centre in the Netherlands.",
-                "image": "sieboldhuis.jpg",
-                "url": "https://www.sieboldhuis.org/en/",
-                "type": "museum"
-            }
-        }, 
-        {
-            "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.4858978, 52.1584668, 0] }, 
-            "properties": {
-                "id": "antiquities",
-                "name": "National Museum of Antiquities", 
-                "description": "Explore the age-old civilisations of Egypt, the Classical World, the ancient Near East, and the Netherlands in prehistoric, Roman, and medieval times",
-                "image": "antiquities.jpg",
-                "url": "https://www.rmo.nl/en/",
-                "type": "museum"
-            }
-        }, 
-        {
-            "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.494175, 52.157963, 0] }, 
-            "properties": {
-                "id": "hooglandsekerk",
-                "name": "Hooglandsekerk, Leiden", 
-                "description": "At the confluence of the Old and New Rhine stands the Hooglandse Kerk, an imposing late Gothic cruciform basilica in the heart of Leiden and a gathering place for various occasions for centuries.",
-                "image": "hooglandsekerk.jpg",
-                "url": "https://hooglandsekerk.com/",
-                "type": "church"
-            }
-        }, 
-        {
-            "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.4878087, 52.1576184, 0] }, 
-            "properties": {
-                "id": "pieterskerk",
-                "name": "Pieterskerk, Leiden", 
-                "description": "Home to the Van Hagerbeer organ - the only large Dutch city organ from the 17th century still in existence that has a meantone temperament.",
-                "image": "pieterskerk.jpg",
-                "url": "https://pieterskerk.com/",
-                "type": "church"
-            }
-        }, 
-        {
-            "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.4838994, 52.154917, 0] }, 
-            "properties": {
-                "id": "sterrewacht",
-                "name": "Oude Sterrewacht (Old Observatory Leiden)", 
-                "description": "The Old Observatory stands on the grounds of the Hortus. This observatory is the oldest surviving university observatory in the world.",
-                "image": "sterrewacht.jpg",
-                "url": "https://hortusleiden.nl/zien-en-doen/ontdek-de-oude-sterrewacht",
-                "type": "museum"
-            }
-        }, 
-        {
-            "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.487625, 52.163041, 0] }, 
-            "properties": {
-                "id": "lakenhal",
-                "name": "Museum de Lakenhal", 
-                "description": "Museum De Lakenhal is the visual arts, history and crafts museum of the city of Leiden.",
-                "image": "lakenhal.jpg",
-                "url": "https://www.lakenhal.nl/",
-                "type": "museum"
-            }
-        }, 
-        {
-            "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.484888, 52.1571223, 0] }, 
-            "properties": {
-                "id": "hortusbotanicus",
-                "name": "Hortus Botanicus Leiden", 
-                "description": "The Hortus is an oasis of tranquility in the heart of Leiden",
-                "image": "hortusbotanicus.jpg",
-                "url": "https://hortusleiden.nl/",
-                "type": "park"
-            }
-        }, 
-        {
-            "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.4535999, 52.1705, 0] }, 
+            "geometry": { "type": "Point", "coordinates": [4.4535999, 52.1705] }, 
             "properties": {
                 "id": "corpus",
                 "name": "Corpus Museum", 
@@ -182,10 +99,82 @@
         }, 
         {
             "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.3143148, 52.0804322, 0] }, 
+            "geometry": { "type": "Point", "coordinates": [4.4846089, 52.1596659] }, 
+            "properties": {
+                "id": "sieboldhuis",
+                "name": "Japan Museum SieboldHuis", 
+                "description": "Franz Philipp von Siebold (1796-1866) lived in this house and displayed his collection of Japanese objects and artefacts to a captivated public. Today, after more than 150 years, his former residence is now the first official Japan centre in the Netherlands.",
+                "image": "sieboldhuis.jpg",
+                "url": "https://www.sieboldhuis.org/en/",
+                "type": "museum"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.487625, 52.163041] }, 
+            "properties": {
+                "id": "lakenhal",
+                "name": "Museum de Lakenhal", 
+                "description": "Museum De Lakenhal is the visual arts, history and crafts museum of the city of Leiden.",
+                "image": "lakenhal.jpg",
+                "url": "https://www.lakenhal.nl/",
+                "type": "museum"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4858978, 52.1584668] }, 
+            "properties": {
+                "id": "antiquities",
+                "name": "National Museum of Antiquities", 
+                "description": "Explore the age-old civilisations of Egypt, the Classical World, the ancient Near East, and the Netherlands in prehistoric, Roman, and medieval times",
+                "image": "antiquities.jpg",
+                "url": "https://www.rmo.nl/en/",
+                "type": "museum"
+            }
+        }, 
+        {
+            "type": "Feature",
+            "geometry": { "type": "Point", "coordinates": [4.475394, 52.165751 ] }, 
+            "properties": {
+                "id": "naturalis",
+                "name": "Naturalis Biodiversity Center",
+                "description": "Naturalis is a welcoming and easily accessible museum for young and old. There are seven theme galleries, two attractions, three workshop areas and four information points.",
+                "image": "naturalis.jpg",
+                "url": "https://www.naturalis.nl/en",
+                "type": "museum"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4838994, 52.154917] }, 
+            "properties": {
+                "id": "sterrewacht",
+                "name": "Oude Sterrewacht (Old Observatory Leiden)", 
+                "description": "The Old Observatory stands on the grounds of the Hortus. This observatory is the oldest surviving university observatory in the world.",
+                "image": "sterrewacht.jpg",
+                "url": "https://hortusleiden.nl/zien-en-doen/ontdek-de-oude-sterrewacht",
+                "type": "museum"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.314293971164594, 52.083436638447715] }, 
+            "properties": {
+                "id": "escher",
+                "name": "The Hague - Escher in the Palace",
+                "description": "With over 120 prints, Escher in Het Paleis always displays the most famous works and a selection of ever-changing graphic art and tessellations from the oeuvre of Maurits C. Escher (1898-1972)",
+                "image": "escher.jpg",
+                "url": "https://escherinhetpaleis.nl/",
+                "type": "museum"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.3143148, 52.0804322] }, 
             "properties": {
                 "id": "mauritshuis",
-                "name": "Mauritshuis", 
+                "name": "The Hague - Mauritshuis", 
                 "description": "The Mauritshuis stands in the heart of The Hague. A small museum of world class with an extraordinary collection of world-famous 17th-century Dutch and Flemish painting.",
                 "image": "mauritshuis.jpg",
                 "url": "https://www.mauritshuis.nl/",
@@ -194,10 +183,10 @@
         }, 
         {
             "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.3034284, 52.0846659, 0] }, 
+            "geometry": { "type": "Point", "coordinates": [4.3034284, 52.0846659] }, 
             "properties": {
                 "id": "panorama",
-                "name": "Museum Panorama Mesdag", 
+                "name": "The Hague - Museum Panorama Mesdag", 
                 "description": "Visit the world-famous Panorama of Scheveningen, painted by Hendrik Willem Mesdag in 1881",
                 "image": "panorama.jpg",
                 "url": "https://panorama-mesdag.nl/",
@@ -206,14 +195,122 @@
         },
         {
             "type": "Feature", 
-            "geometry": { "type": "Point", "coordinates": [4.314293971164594, 52.083436638447715, 0] }, 
+            "geometry": { "type": "Point", "coordinates": [4.484888, 52.1571223] }, 
             "properties": {
-                "id": "escher",
-                "name": "Escher in the Palace",
-                "description": "With over 120 prints, Escher in Het Paleis always displays the most famous works and a selection of ever-changing graphic art and tessellations from the oeuvre of Maurits C. Escher (1898-1972)",
-                "image": "escher.jpg",
-                "url": "https://escherinhetpaleis.nl/",
-                "type": "museum"
+                "id": "hortusbotanicus",
+                "name": "Hortus Botanicus Leiden", 
+                "description": "The Hortus is an oasis of tranquility in the heart of Leiden",
+                "image": "hortusbotanicus.jpg",
+                "url": "https://hortusleiden.nl/",
+                "type": "park"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4879555, 52.1541205] }, 
+            "properties": {
+                "id": "singelpark",
+                "name": "Singelpark", 
+                "description": "The Singelpark is a 6.5-kilometer-long city park, created from the initiative of the residents of Leiden. A park in the shape of a loop, without beginning or end, for all residents and visitors of Leiden.",
+                "image": "singelpark.png",
+                "url": "https://www.singelpark.nl/",
+                "type": "park"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4995903, 52.1537101] }, 
+            "properties": {
+                "id": "plantsoen",
+                "name": "Het Plantsoen", 
+                "description": "The Hortus is an oasis of tranquility in the heart of Leiden",
+                "image": "plantsoen.jpg",
+                "url": "http://www.hetplantsoen.nl/",
+                "type": "park"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4977457, 52.1636092] }, 
+            "properties": {
+                "id": "huigpark",
+                "name": "Huigpark", 
+                "description": "",
+                "image": "huigpark.jpg",
+                "url": "https://www.visitleiden.nl/en/locations/801920722/huigpark",
+                "type": "park"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.50438906, 52.1607062] }, 
+            "properties": {
+                "id": "ankerpark",
+                "name": "Ankerpark", 
+                "description": "",
+                "image": "ankerpark.jpg",
+                "url": "https://www.visitleiden.nl/en/locations/540000812/het-ankerpark",
+                "type": "park"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.50344963, 52.1573911] }, 
+            "properties": {
+                "id": "katoenpark",
+                "name": "Katoenpark", 
+                "description": "",
+                "image": "katoenpark.jpg",
+                "url": "https://www.visitleiden.nl/en/locations/961585064/katoenpark",
+                "type": "park"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4907069,52.1556054] }, 
+            "properties": {
+                "id": "werfpark",
+                "name": "Van der Werffpark", 
+                "description": "Site of an 1807 gunpowder explosion, this park is now popular for walks along the canal & picnics.",
+                "image": "werfpark.jpg",
+                "url": "https://www.visitleiden.nl/en/locations/652476615/van-der-werffpark",
+                "type": "park"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.494175, 52.157963] }, 
+            "properties": {
+                "id": "hooglandsekerk",
+                "name": "Hooglandsekerk, Leiden", 
+                "description": "At the confluence of the Old and New Rhine stands the Hooglandse Kerk, an imposing late Gothic cruciform basilica in the heart of Leiden and a gathering place for various occasions for centuries.",
+                "image": "hooglandsekerk.jpg",
+                "url": "https://hooglandsekerk.com/",
+                "type": "church"
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.4878087, 52.1576184] }, 
+            "properties": {
+                "id": "pieterskerk",
+                "name": "Pieterskerk, Leiden", 
+                "description": "Home to the Van Hagerbeer organ - the only large Dutch city organ from the 17th century still in existence that has a meantone temperament.",
+                "image": "pieterskerk.jpg",
+                "url": "https://pieterskerk.com/",
+                "type": "church"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.490702, 52.16063] }, 
+            "properties": {
+                "id": "hartebrugkerk",
+                "name": "Hartebrugkerk, Leiden", 
+                "description": "Unfortunately, the maarschalkerweerd organ is currently being restored.",
+                "image": "hartebrugkerk.jpg",
+                "url": "http://www.hartebrug.nl/",
+                "type": "church"
             }
         },
         {
@@ -250,6 +347,114 @@
                 "image": "steenhofsuites.jpg",
                 "url": "https://steenhofsuites.com/",
                 "type": "hotel"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.484688, 52.163472 ] },
+            "properties": {
+                "id": "bierlokaaldeveste",
+                "name": "Bierlokaal de Veste",
+                "description": "Bierlokaal de Veste has more than 200 craft beers to offer on can and bottle and 18 on draft.",
+                "image": "bierlokaaldeveste.jpg",
+                "url": "https://www.bierlokaaldeveste.nl/",
+                "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.488706, 52.160068 ] },
+            "properties": {
+                "id": "stadsbrouwhuis",
+                "name": "Eeterij en Proeflokaal Het Stadsbrouwhuis",
+                "description": "30 delicious beer taps with some brewed on premises, and delicious food in the restaurant.",
+                "image": "stadsbrouwhuis.jpg",
+                "url": "http://stadsbrouwhuis.nl/",
+                "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.495162, 52.157703 ] },
+            "properties": {
+                "id": "debontekoe",
+                "name": "Cafe de Bonte Koe",
+                "description": "A quintessentially Dutch café serving drinks, snacks and light meals.",
+                "image": "debontekoe.jpg",
+                "url": "http://www.cafedebontekoe.net/",
+                "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [4.484291, 52.157866 ] },
+            "properties": {
+                "id": "pakhuis",
+                "name": "Pakhuis Leiden",
+                "description": "Enjoy a relaxed atmosphere inside the grand café or on the terrace in the sheltered courtyard, with parasols and heaters for every season.",
+                "image": "pakhuis.jpg",
+                "url": "https://www.pakhuisleiden.nl/",
+                "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.491705, 52.158636 ] },
+            "properties": {
+                "id": "stadthouder",
+                "name": "De Stadthouder",
+                "description": "Nice terrace on the canal - mixed reviews for food quality and service.",
+                "image": "stadthouder.jpg",
+                "url": "https://www.stadthouder.nl/",
+                "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.491217, 52.15947 ] },
+            "properties": {
+                "id": "annies",
+                "name": "Annie's",
+                "description": "Great location but mixed reviews on service and food quality",
+                "image": "annies.jpg",
+                "url": "https://www.annies.nu/nl",
+                "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.49038690000002, 52.16229356822487 ] },
+            "properties": {
+                "id": "marenpoort",
+                "name": "In De Oude Marenpoort",
+                "description": "Brown café with excellent beer",
+                "image": "marenpoort.jpg",
+                "url": "https://marenpoort.nl/",
+                "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.491954, 52.158381 ] },
+            "properties": {
+                "id": "einstein",
+                "name": "Einstein Leiden",
+                "description": "Our terrace on the Nieuwe Rijn is the perfect spot to enjoy a bite to eat, a drink, and the lively atmosphere in the heart of Leiden.",
+                "image": "einstein.jpg",
+                "url": "https://www.einstein.nu/",
+                "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.49330427595249, 52.15798979379865 ] },
+            "properties": {
+                "id": "iscreamcoffee",
+                "name": "I Scream Coffee",
+                "description": "Speciality coffee bar with delicious vegan pastries",
+                "image": "iscreamcoffee.jpg",
+                "url": "https://www.iscreamcoffee.nl/",
+                "type": "cafe"
             }
         }
     ]
