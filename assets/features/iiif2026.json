@@ -237,7 +237,7 @@
                 "name": "Huigpark", 
                 "description": "",
                 "image": "huigpark.jpg",
-                "url": "https://www.visitleiden.nl/en/locations/801920722/huigpark",
+                "url": "",
                 "type": "park"
             }
         },
@@ -249,7 +249,7 @@
                 "name": "Ankerpark", 
                 "description": "",
                 "image": "ankerpark.jpg",
-                "url": "https://www.visitleiden.nl/en/locations/540000812/het-ankerpark",
+                "url": "",
                 "type": "park"
             }
         },
@@ -261,7 +261,7 @@
                 "name": "Katoenpark", 
                 "description": "",
                 "image": "katoenpark.jpg",
-                "url": "https://www.visitleiden.nl/en/locations/961585064/katoenpark",
+                "url": "",
                 "type": "park"
             }
         },
@@ -273,7 +273,7 @@
                 "name": "Van der Werffpark", 
                 "description": "Site of an 1807 gunpowder explosion, this park is now popular for walks along the canal & picnics.",
                 "image": "werfpark.jpg",
-                "url": "https://www.visitleiden.nl/en/locations/652476615/van-der-werffpark",
+                "url": "",
                 "type": "park"
             }
         },

@@ -1,4 +1,4 @@
-import {Control, Map, DomUtil, DomEvent } from 'leaflet';
+import {Control, DomUtil } from 'leaflet';
 import { iiif } from './config.mjs';
 
 /*
@@ -9,13 +9,13 @@ import { iiif } from './config.mjs';
  */
 
 // @namespace Control.FeatureSelecter
-// @constructor Control.FeatureSelecte(options: Control.FeatureSelecte options)
+// @constructor Control.FeatureSelecter(options: Control.FeatureSelecter options)
 // Creates a feature selection control
 export class FeatureSelecter extends Control {
 
 	static {
 		// @section
-		// @aka Control.Zoom options
+		// @aka Control.FeatureSelecter options
 		this.setDefaultOptions({
 			// @option position: String = 'topright'
 			// The position of the control (one of the map corners). Possible values are `'topleft'`,

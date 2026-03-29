@@ -3,6 +3,8 @@ import {
     Map,
     TileLayer
 } from 'leaflet';
+import { LocateControl } from 'locatecontrol';
+import { FullScreen } from 'fullscreencontrol';
 import { iiif } from './config.mjs';
 import { FeatureSelecter } from './featurescontrol.mjs';
 
@@ -41,6 +43,27 @@ export function initMap() {
     };
     let overlayMaps = {};
     iiif.layerControl = new Control.Layers(baseMaps, overlayMaps, { position: 'bottomleft' }).addTo(iiif.map);
+    iiif.fullscreencontrol = new FullScreen({
+		position: 'topleft'
+	}).addTo(iiif.map);
+    iiif.locateControl = new LocateControl({
+        position: 'topleft',
+        strings: {
+            title: "Show me where I am!"
+        },
+        locateOptions: {
+            watch: true,
+            enableHighAccuracy: true
+        }
+    }).addTo(iiif.map);
+    iiif.map.on('locationfound', function(e){
+        iiif.user.lat = e.latitude;
+        iiif.user.lng = e.longitude;
+        console.log(iiif.user);
+    });
+    iiif.map.on('locateactivate', e => { iiif.locationactive = true });
+    iiif.map.on('locatedeactivate', e => { iiif.locationactive = false; iiif.user.lat = null; iiif.user.lng = null });
+    iiif.map.on( 'click', e => { console.log( e.latlng ); });
     iiif.mapLoaded = true;
 
     document.dispatchEvent( new Event( 'maploaded' ) );

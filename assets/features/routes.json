@@ -5,7 +5,9 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "Amsterdam Schiphol Airport to Amsterdam Centraal Station",
+                "routeid": "r1",
+                "routename": "Amsterdam Schiphol Airport to Tolhuistuin",
+                "leg": "Amsterdam Schiphol Airport to Amsterdam Centraal Station",
                 "mode": "train",
                 "service": "8176 Sprinter Amsterdam Centraal. Platform 3 every 15 minutes"
             },
@@ -258,12 +260,22 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "Amsterdam Centraal Station to Buiksloterweg ferry terminal",
+                "routeid": "r1",
+                "routename": "Amsterdam Schiphol Airport to Tolhuistuin",
+                "leg": "Amsterdam Centraal Station to Buiksloterweg ferry terminal",
                 "mode": "walk"
             },
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
+                    [
+                        4.900997,
+                        52.379267
+                    ],
+                    [
+                        4.90119556,
+                        52.37946619 
+                    ],
                     [
                         4.90016,
                         52.379333
@@ -277,16 +289,18 @@
                         52.380221
                     ],
                     [
-                        4.899361,
-                        52.380594
-                    ]
+                        4.899387,
+                        52.380607
+                    ],
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "label": "Amsterdam Centraal Station to Buiksloterweg ferry crossing",
+                "routeid": "r1",
+                "routename": "Amsterdam Schiphol Airport to Tolhuistuin",
+                "leg": "Amsterdam Centraal Station to Buiksloterweg ferry crossing",
                 "mode": "boat",
                 "service": "F3 Buiksloterweg every 12 minutes"
             },
@@ -318,8 +332,8 @@
                         52.382073
                     ],
                     [
-                        4.903003,
-                        52.382296
+                        4.9030740,
+                        52.382327
                     ]
                 ]
             }
@@ -327,15 +341,17 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "Buiksloterweg ferry terminal to Tolhuistuin",
+                "routeid": "r1",
+                "routename": "Amsterdam Schiphol Airport to Tolhuistuin",
+                "leg": "Buiksloterweg ferry terminal to Tolhuistuin",
                 "mode": "walk"
             },
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
                     [
-                        4.903014,
-                        52.382316
+                        4.9030740,
+                        52.382327
                     ],
                     [
                         4.903148,

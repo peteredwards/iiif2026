@@ -7,8 +7,14 @@ export const iiif = {
     maxZoom: 19,
     minZoom: 10,
     featuresURL: '{{ site.url }}{{ site.baseurl }}/assets/features/iiif2026.json',
+    routesURL: '{{ site.url }}{{ site.baseurl }}/assets/features/routes.json',
     imagesURL: '{{ site.url }}{{ site.baseurl }}/assets/images/',
     debug: true,
+    user: {
+        lat: null,
+        lng: null
+    },
+    locationactive: false,
     features: [],
     featureGroups: {
         venue: {
@@ -46,6 +52,9 @@ export const iiif = {
             accent: "#333333",
             color: "#666666",
             iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="800" height="745.626" viewBox="0 0 310 288.93"><path d="M381.936 0v40.432h-55.823V76.56h55.823v57.02L70.973 389.811l38.699 46.961L400 197.543l290.328 239.23 38.7-46.96L418.063 133.58V76.56h55.823V40.433h-55.823V0ZM400 234.096 171.92 423.287V744.83h149.799V608.508c0-42.756 34.664-77.418 77.42-77.418h1.722c42.756 0 77.42 34.662 77.42 77.418V744.83h149.8V423.287ZM146.113 504.885 0 589.527v156.098h146.113v-.795zm507.774.185v240.555H800V589.527Z" style="stroke-width:2.58065" transform="scale(.3875)"/></svg>'
+        },
+        route: {
+            label:'Routes'
         }
     }
 };
