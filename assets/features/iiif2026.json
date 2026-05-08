@@ -361,6 +361,30 @@
                 "type": "cafe"
             }
         },
+       {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.492598176002503, 52.160727694506086 ] },
+            "properties": {
+                "id": "papillon",
+                "name": "Café Papillon",
+                "description": "Affordable beer and coffee.",
+                "image": "papillon.jpg",
+                "url": "",
+                "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.4897711277008066, 52.16095146795107 ] },
+            "properties": {
+                "id": "praethuys",
+                "name": "Café het Praethuys",
+                "description": "Terrace, trappist room and live music",
+                "image": "praethuys.jpg",
+                "url": "https://www.praethuysleiden.nl/",
+                "type": "cafe"
+            }
+        },
         {
             "type": "Feature", 
             "geometry": { "type": "Point", "coordinates": [ 4.488706, 52.160068 ] },
@@ -455,6 +479,30 @@
                 "image": "iscreamcoffee.jpg",
                 "url": "https://www.iscreamcoffee.nl/",
                 "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.486335217952729, 52.163588948108696 ] },
+            "properties": {
+                "id": "katescorner",
+                "name": "Kate's Corner",
+                "description": "Cozy corner with a variety of teas, coffees and light bites",
+                "image": "katescorner.jpg",
+                "url": "",
+                "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.48404, 52.161903 ] },
+            "properties": {
+                "id": "lepalais",
+                "name": "Le Palais",
+                "description": "",
+                "image": "lepalais.jpg",
+                "url": "",
+                "type": "coffee"
             }
         }
     ]
