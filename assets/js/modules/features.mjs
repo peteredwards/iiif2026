@@ -121,9 +121,20 @@ function buildFeaturePopup( feature ) {
     if ( feature.properties.description && feature.properties.description !== '' ) {
         popupText += '<p>' + feature.properties.description + '</p>';
     }
-    if ( anchor_close !== '' ) {
+    if ( feature.properties.menu_url || feature.properties.veggiekarte_url || anchor_close !== "" ) {
+        popupText += '<ul>';
         let re = /(Amsterdam|Leiden|The Hague) - /i
-        popupText += '<p>' + anchor_open + 'Visit the ' + feature.properties.name.replace(re, '') + ' website' + anchor_close + '</p>';
+        let truncname = feature.properties.name.replace(re, '');
+        if ( anchor_close !== '' ) {
+            popupText += '<li>' + anchor_open + 'Visit the ' + truncname + ' website' + anchor_close + '</li>';
+        }
+        if ( feature.properties.menu_url && feature.properties.menu_url !== '' ) {
+            popupText += '<li><a href="' + feature.properties.menu_url + '" target="_external" title="View the menu of ' + truncname + '">View the menu</a></li>';
+        }
+        if ( feature.properties.veggiekarte_url && feature.properties.veggiekarte_url !== '' ) {
+            popupText += '<li><a href="' + feature.properties.veggiekarte_url + '" target="_external" title="Visit the Veggie Karte site at ' + truncname + '">See on Veggie Karte</a></li>';
+        }
+        popupText += '</ul>';
     }
     popupText += '<p><a href="https://www.google.com/maps/dir/?api=1&travelmode=walking&destination=' + feature.geometry.coordinates[1] + ',' + feature.geometry.coordinates[0] + '" target="directions">Get directions</a></p>';
     return popupText;

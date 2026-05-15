@@ -5,6 +5,7 @@ import {
 } from 'leaflet';
 import { LocateControl } from 'locatecontrol';
 import { FullScreen } from 'fullscreencontrol';
+import { ThemeControl } from "themecontrol";
 import { iiif } from './config.mjs';
 import { FeatureSelecter } from './featurescontrol.mjs';
 
@@ -56,6 +57,18 @@ export function initMap() {
             enableHighAccuracy: true
         }
     }).addTo(iiif.map);
+    // Theme control
+    new ThemeControl({
+        position: "topleft",
+        defaultTheme: "light",
+        detectSystemTheme: true,
+        storageKey: "iiif-map-theme",
+
+        // Callback when theme changes
+        onChange: (themeKey, theme) => {
+            console.log(`Theme changed to: ${themeKey}`);
+        }
+    }).addTo(iiif.map);    
     iiif.map.on('locationfound', function(e){
         iiif.user.lat = e.latitude;
         iiif.user.lng = e.longitude;

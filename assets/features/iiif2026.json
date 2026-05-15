@@ -495,6 +495,62 @@
         },
         {
             "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.486219882965089, 52.16311181106485 ] },
+            "properties": {
+                "id": "sumatrahouse",
+                "name": "Sumatra House",
+                "description": "Indonesian restaurant where the dishes are richly prepared with spices and herbs; the traditional boemboes.",
+                "image": "sumatrahouse.jpg",
+                "url": "https://sumatrahouse.com/",
+                "menu_url": "https://sumatrahouse.com/menukaart-engels/",
+                "veggiekarte_url": "https://veggiekarte.de/#node/2913148836",
+                "type": "restaurant"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.486300349235536, 52.163404675098114 ] },
+            "properties": {
+                "id": "hudson",
+                "name": "Hudson Bar & Kitchen",
+                "description": "The taste of New York",
+                "image": "hudson.jpg",
+                "url": "https://www.restauranthudson.nl/locations/leiden",
+                "menu_url": "https://www.restauranthudson.nl/menukaart",
+                "veggiekarte_url": "https://veggiekarte.de/#node/601058270",
+                "type": "restaurant"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.485471546649934, 52.162871595306676 ] },
+            "properties": {
+                "id": "ichiban",
+                "name": "Ichi Ban",
+                "description": "Sushi, Sashimi, Bento",
+                "image": "ichiban.jpg",
+                "url": "https://ichibanleiden.nl/",
+                "menu_url": "https://ichibanleiden.nl/wp-content/uploads/2024/05/2024-ichi-ban-menukaart-ak-scaled.jpg#199",
+                "veggiekarte_url": "https://veggiekarte.de/#node/751963155",
+                "type": "restaurant"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.485932886600495, 52.16223320740114 ] },
+            "properties": {
+                "id": "rodos",
+                "name": "Rodos Good Taste",
+                "description": "Modern Greek cuisine",
+                "image": "rodos.jpg",
+                "url": "https://www.rodosgoodtaste.nl/en/",
+                "menu_url": "https://rodosgoodtaste.nl/en/menukaart/",
+                "veggiekarte_url": "https://veggiekarte.de/#node/449240553",
+                "type": "restaurant"
+            }
+        },
+        {
+            "type": "Feature", 
             "geometry": { "type": "Point", "coordinates": [ 4.48404, 52.161903 ] },
             "properties": {
                 "id": "lepalais",
