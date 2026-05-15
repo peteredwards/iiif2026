@@ -60,34 +60,44 @@ export function loadRoutes() {
         "key": 'iiif2026routes',
         "callback": function( data ) {
             iiif.routesLayerGroup = new LayerGroup();
-            iiif.routesLayer = new GeoJSON( data, {
-                /**
-                 * Add event handlers to features, and collect the features
-                 * in arrays so we can build the selecters
-                 */
-                onEachFeature: function( feature, layer ) {
-                    if ( ! iiif.routes.hasOwnProperty(feature.properties.routeid) ) {
-                        iiif.routes[feature.properties.routeid] = [layer];
-                        let fl = DomUtil.get('route-list');
-                        layer.featureselecter = DomUtil.create('button', feature.properties.type+'-item', fl);
-                        DomEvent.on(layer.featureselecter, 'click', selectFeature);
-                        layer.featureselecter.setAttribute('data-target-id', feature.properties.routeid);
-                        layer.featureselecter.innerText = feature.properties.name;
-                    } else {
-                        iiif.routes[feature.properties.routeid].push(layer);
-                    }
-                    /**
-                     * Add popups
-                     */
-                    //layer.popup = layer.bindPopup( buildFeaturePopup(feature), { autoClose: false, minWidth: 300, className: feature.properties.type + '-popup' } );
-                },
-                filter: function( feature, layer ) {
-                    return ( ['annies','einstein','stadthouder'].indexOf(feature.properties.id) === -1 ? true: false );
+            /**
+             * Analyse route data before creating GeoJSON layers
+             * Each route has its own GoeJSON layer with just the legs
+             * of that route in it
+             */
+            //let routesJSON = JSON.parse(data);
+            for ( let f of data.features ) {
+                if ( ! iiif.routes.hasOwnProperty(f.properties.routeid) ) {
+                    iiif.routes[f.properties.routeid] = {
+                        name: f.properties.routename,
+                        legs: [f.properties.leg],
+                        services: [f.properties.service],
+                        features: [f]
+                    };
+                    let fl = DomUtil.get('route-list');
+                    let rb = DomUtil.create('button', f.properties.type+'-item', fl);
+                    DomEvent.on(rb, 'click', selectRoute);
+                    rb.setAttribute('data-target-id', f.properties.routeid);
+                    rb.innerText = f.properties.routename;
+                } else {
+                    iiif.routes[f.properties.routeid].legs.push(f.properties.leg);
+                    iiif.routes[f.properties.routeid].services.push(f.properties.service);
+                    iiif.routes[f.properties.routeid].features.push(f);
                 }
-            });
-            /* add the features geoJSON layer to the LayerGroup */
-            iiif.routesLayerGroup.addLayer( iiif.routesLayer );
-            iiif.routesLayerGroup.addTo(iiif.map);
+            }
+            for ( let r in iiif.routes ) {
+                iiif.routes[r].layer = new GeoJSON(null,{
+                    onEachFeature: function( feature, layer ) {
+                        layer.bindPopup( buildRoutePopup(feature), { autoClose: true, minWidth: 300, className: feature.properties.mode + '-popup' } );
+                    },
+                    style: function(feature) {
+                        return iiif.routeStyles[feature.properties.mode];
+                    }
+                }).addTo(iiif.map);
+                for ( let f of iiif.routes[r].features ) {
+                    iiif.routes[r].layer.addData(f);
+                }
+            }
         }
     });
 }
@@ -128,4 +138,27 @@ function selectFeature(e) {
             iiif.map.once('moveend', e => { f.openPopup(); });
         }
     })
+}
+
+function selectRoute(e) {
+    let targetID = e.target.getAttribute('data-target-id');
+    console.log(targetID);
+}
+
+/**
+ * Builds HTML to be used in the popups for each leg of a route
+ * @param {Object} feature 
+ * @returns {String} HTML
+ */
+function buildRoutePopup( feature ) {
+    let route = iiif.routes[feature.properties.routeid];
+    let popupText = '<h3>' + route.name + '</h3><p>Steps on this route:</p></ol>';
+    for ( let i = 0; i < route.legs.length; i++ ) {
+        popupText += '<li>'
+        popupText += feature.properties.leg === route.legs[i]? '<strong>' + route.legs[i] + '</strong>': route.legs[i];
+        popupText += route.services[i]? ' (' + route.services[i] + ')': '';
+        popupText += '</li>';
+    }
+    popupText += '</ol>';
+    return popupText;
 }

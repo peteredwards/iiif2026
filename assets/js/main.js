@@ -1,5 +1,5 @@
 import { initMap } from './modules/core.mjs';
-import { loadFeatures } from './modules/features.mjs';
+import { loadFeatures, loadRoutes } from './modules/features.mjs';
 /**
  * Initialise the map
  */
@@ -8,4 +8,5 @@ document.addEventListener( 'DOMContentLoaded', () => {
 });
 document.addEventListener( 'maploaded', (e) => {
     loadFeatures();
+    loadRoutes();
 });

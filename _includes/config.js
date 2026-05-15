@@ -7,7 +7,14 @@ export const iiif = {
     maxZoom: 19,
     minZoom: 10,
     featuresURL: '{{ site.url }}{{ site.baseurl }}/assets/features/iiif2026.json',
+    features: [],
     routesURL: '{{ site.url }}{{ site.baseurl }}/assets/features/routes.json',
+    routes: {},
+    routeStyles: {
+        train: { color: '#226622', weight: 5 },
+        boat: { color: '#2266FF', weight: 5 },
+        walk: { color: '#FF6622', weight: 5, dashArray: '3 1' }
+    },
     imagesURL: '{{ site.url }}{{ site.baseurl }}/assets/images/',
     debug: true,
     user: {

@@ -1,3 +1,3 @@
 ---
 ---
-{% include scripts/config.js %}
+{% include config.js %}
