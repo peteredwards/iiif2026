@@ -44,7 +44,7 @@ export function loadFeatures() {
                     iiif.features.push( layer );
                 },
                 filter: function( feature, layer ) {
-                    return ( ['annies','einstein','stadthouder'].indexOf(feature.properties.id) === -1 ? true: false );
+                    return ( ['lepalais','einstein','stadthouder'].indexOf(feature.properties.id) === -1 ? true: false );
                 }
             });
             /* add the features geoJSON layer to the LayerGroup */

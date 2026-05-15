@@ -442,7 +442,9 @@
                 "description": "Great location but mixed reviews on service and food quality",
                 "image": "annies.jpg",
                 "url": "https://www.annies.nu/nl",
-                "type": "cafe"
+                "menu_url": "https://a.storyblok.com/f/287544853891959/x/386e7a73dc/annie-s-menu.pdf",
+                "veggiekarte_url": "https://veggiekarte.de/#node/2917023856",
+                "type": "restaurant"
             }
         },
         {
@@ -518,6 +520,44 @@
                 "url": "https://www.restauranthudson.nl/locations/leiden",
                 "menu_url": "https://www.restauranthudson.nl/menukaart",
                 "veggiekarte_url": "https://veggiekarte.de/#node/601058270",
+                "type": "restaurant"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.500805735588075, 52.16145824482879 ] },
+            "properties": {
+                "id": "tokohaven",
+                "name": "Toko Haven",
+                "description": "Surinamese take away",
+                "image": "tokohaven.png",
+                "url": "https://tokohaven.nl/",
+                "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.485871195793153, 52.16338657681485 ] },
+            "properties": {
+                "id": "moksi",
+                "name": "Moksi",
+                "description": "Surinamese take away",
+                "image": "moksi.jpg",
+                "url": "https://www.moksi-leiden.nl/",
+                "type": "cafe"
+            }
+        },
+        {
+            "type": "Feature", 
+            "geometry": { "type": "Point", "coordinates": [ 4.316511154174806, 52.07655197641196 ] },
+            "properties": {
+                "id": "warungmini",
+                "name": "Warung Mini XL",
+                "description": "Surinamese and Vietnamese cuisine, with a focus on vegetarian and vegan dishes",
+                "image": "warungmini.png",
+                "url": "https://www.wmxl.nl/",
+                "menu_url": "https://www.wmxl.nl/menu/",
+                "veggiekarte_url": "https://veggiekarte.de/#node/2780594820",
                 "type": "restaurant"
             }
         },
