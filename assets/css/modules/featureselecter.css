@@ -1,18 +1,19 @@
 .leaflet-control-featureselecter {
-    background: #ffffff;
+    background: var(--control-background-color);
+    background: var(--control-text-color);
     padding: 0.5rem;
     width: 12rem;
 
     .featuregroup-container {
         margin: 0;
-        &>details {
+        & > details {
             margin-left: 0.5rem;
         }
         .featuregroup-label {
             font-weight: bold;
             cursor: pointer;
             &:hover {
-                background: #efefef;
+                background: var(--control-hover-bg);
             }
         }
         .featuregroup-list {
